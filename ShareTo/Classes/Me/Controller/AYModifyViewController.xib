@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AYModifyViewController" customModule="ShareTo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAE-ke-uRb">
+                    <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="8k3-9D-Xri"/>
+                        <constraint firstAttribute="height" constant="44" id="R6k-Yx-Jf5"/>
+                    </constraints>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="修改资料" id="9Fi-et-xQ4">
+                            <barButtonItem key="leftBarButtonItem" title="返回" id="oDE-38-AHZ">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="back:" destination="-1" id="Ru4-6T-hBl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="保存" id="eDb-mQ-MSf">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="save:" destination="-1" id="feq-aV-MYX"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Fs-Tu-zPs">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MOW-tP-Snf"/>
+                        <outlet property="delegate" destination="-1" id="Sqj-Ad-7il"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vAE-ke-uRb" secondAttribute="trailing" id="FG7-es-naU"/>
+                <constraint firstItem="vAE-ke-uRb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="K9l-ZW-Drw"/>
+                <constraint firstItem="vAE-ke-uRb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="MHf-cT-Kyh"/>
+                <constraint firstItem="9Fs-Tu-zPs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XLY-RA-kKK"/>
+                <constraint firstItem="9Fs-Tu-zPs" firstAttribute="top" secondItem="vAE-ke-uRb" secondAttribute="bottom" id="azU-NQ-7BC"/>
+                <constraint firstAttribute="trailing" secondItem="9Fs-Tu-zPs" secondAttribute="trailing" id="qBZ-c1-mlz"/>
+                <constraint firstItem="vAE-ke-uRb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="r2t-Oh-T7T"/>
+                <constraint firstItem="vAE-ke-uRb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xi2-XX-pIf"/>
+                <constraint firstAttribute="bottom" secondItem="9Fs-Tu-zPs" secondAttribute="bottom" id="yPH-we-5AN"/>
+                <constraint firstAttribute="trailing" secondItem="vAE-ke-uRb" secondAttribute="trailing" id="zaJ-zO-ZQf"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FG7-es-naU"/>
+                    <exclude reference="MHf-cT-Kyh"/>
+                    <exclude reference="r2t-Oh-T7T"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

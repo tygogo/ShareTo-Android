@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="AYPostCellTableViewCell" customModule="ShareTo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="3iT-hP-lVm">
+                        <rect key="frame" x="225" y="15" width="80" height="80"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Bdc-P9-f85"/>
+                            <constraint firstAttribute="width" constant="80" id="doq-wm-C9I"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三叶清子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoA-lc-1AG">
+                        <rect key="frame" x="13" y="13" width="48" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.59607843137254901" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcN-mW-BYb">
+                        <rect key="frame" x="69" y="13" width="29.5" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我喜欢你，抱着一颗不撞南墙不回头的决心" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlI-vy-joH">
+                        <rect key="frame" x="13" y="35" width="204" height="38.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅读 1812" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-Mm-Hbc">
+                        <rect key="frame" x="13" y="81.5" width="53" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                        <color key="textColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="ZcN-mW-BYb" firstAttribute="leading" secondItem="EoA-lc-1AG" secondAttribute="trailing" constant="8" id="7e1-8d-csx"/>
+                    <constraint firstItem="aoA-Mm-Hbc" firstAttribute="top" secondItem="PlI-vy-joH" secondAttribute="bottom" constant="8" id="DUa-C5-qeZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3iT-hP-lVm" secondAttribute="trailing" constant="7" id="DXk-AW-yOY"/>
+                    <constraint firstItem="EoA-lc-1AG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="PR3-1l-VhX"/>
+                    <constraint firstItem="aoA-Mm-Hbc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="PvV-NF-NCg"/>
+                    <constraint firstItem="3iT-hP-lVm" firstAttribute="leading" secondItem="PlI-vy-joH" secondAttribute="trailing" constant="8" id="TRc-4V-3g6"/>
+                    <constraint firstItem="PlI-vy-joH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="V4a-3V-TJ3"/>
+                    <constraint firstItem="ZcN-mW-BYb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="YMB-mt-5H8"/>
+                    <constraint firstItem="PlI-vy-joH" firstAttribute="top" secondItem="ZcN-mW-BYb" secondAttribute="bottom" constant="8" id="cdS-2I-gF6"/>
+                    <constraint firstItem="3iT-hP-lVm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="dxn-4m-mTN"/>
+                    <constraint firstItem="aoA-Mm-Hbc" firstAttribute="leading" secondItem="PlI-vy-joH" secondAttribute="leading" id="t0e-Ek-IsI"/>
+                    <constraint firstItem="EoA-lc-1AG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="vpy-UI-4SZ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="t0e-Ek-IsI"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="authorLabel" destination="EoA-lc-1AG" id="WKg-Wi-PkM"/>
+                <outlet property="avatarLabel" destination="3iT-hP-lVm" id="0Ha-EW-IZK"/>
+                <outlet property="countLabel" destination="aoA-Mm-Hbc" id="pbB-eW-aag"/>
+                <outlet property="dateLabel" destination="ZcN-mW-BYb" id="TJ2-fB-5ON"/>
+                <outlet property="titleLabel" destination="PlI-vy-joH" id="rLY-oU-Ofg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="23" height="23"/>
+    </resources>
+</document>
